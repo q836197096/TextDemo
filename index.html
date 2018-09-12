@@ -2,9 +2,487 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>律师阁</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/calendar.js"></script>
+    <style type="text/css">
+        a {
+            text-decoration: none;
+        }
+        ul, ol, li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #demo {
+            width: 300px;
+            margin: 150px auto;
+        }
+        p {
+            margin: 0;
+        }
+        #dt {
+           border: 0;
+            background: #ffffff;
+            outline:none;
+            width: 70px;
+            position: relative;
+            top: 2px;
+            left: 3px;
+
+        }
+        #rl{
+            position: relative;
+            top: 6px;
+        }
+    </style>
 </head>
 <body>
+<div class="head">
+    <div class="head-button">
+        <span class="head-city">
+           北京市
+        </span>
+        <span class="head-qhcity">切换城市
+             <select class="head-qhcity-select-hh">
+                      <option value ="volvo">北京</option>
+                      <option value ="saab">上海</option>
+                       <option value="opel">石家庄</option>
+                       <option value="audi">山东</option>
+                        </select>
+            <img  class="head-qhcity-img" src="img/xl.png" height="8" width="14"/>
+        </span>
+        <!-- <img src="img/sousuo.jpg" height="49" width="444"/>-->
+        <input  style="outline:none;cursor: pointer;cursor: text" class="head-so" type="text" placeholder="        搜索关键字" >
+        <button type="button" class="head-btn">搜索</button>
+        <span class="head-down"><a href="#">APP下载</a></span>
+        <span class="head-login"><a href="#"><a href="#">登录</a>  |  <a href="#">注册</a></a></span>
+    </div>
+    <span class="head-logo"><img src="img/home_logo.png" height="39" width="125" style="display: block"/></span>
+    <div class="nav-button">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">律师在线</a></li>
+                <li><a href="#">咨询问答</a></li>
+                <li><a href="#">法律知识</a></li>
+                <li><a href="#">法律文书</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">个人中心</a></li>
+            </ul>
+    </div>
+</div>
+<div id="carousel1" class="carousel-content">
+    <ul class="carousel"><
+        <li><img src="img/head1.jpg" height="367" width="1811"/></li>
+        <li><img src="img/a2.png" height="350" width="600"/></li>
+        <li><img src="img/a4.png" height="350" width="600"/></li>
+    </ul>
+    <ul class="carousel-index"></ul>
 
+</div>
+<div class="banner" >
+    <div class="banner-d">
+        <span >找律师</span>
+    </div>
+    <div class="banner-d-ig">
+        <img src="img/home_zls.png" height="4" width="50"/>
+    </div>
+
+</div>
+<div class="center">
+    <ul class="center-u">
+        <li class="pull-left">
+            <button><img src="img/home_sbdjzfy.png" height="42" width="42"/></button>
+        </li>
+        <li class="pull-left" >
+           <img src="img/xxx.jpg"  height="320" width="270"/>
+            <div class="content" >
+                <span class="name">韩灵汐</span>
+                <span class="pf">4.8</span>
+                <span class="sc">擅长。。。。</span>
+            </div>
+        </li>
+        <li class="pull-left">
+            <img src="img/xxx.jpg" height="320" width="270"/>
+            <div class="content">
+                <span class="name">韩灵汐</span>
+                <span class="pf">4.8</span>
+                <span class="sc">擅长。。。。</span>
+            </div>
+        </li>
+        <li class="pull-left">
+            <img src="img/xxx.jpg" height="320" width="270"/>
+            <div class="content">
+                <span class="name">韩灵汐</span>
+                <span class="pf">4.8</span>
+                <span class="sc">擅长。。。。</span>
+            </div>
+        </li>
+        <li class="pull-left">
+            <img src="img/xxx.jpg" height="320" width="270"/>
+            <div class="content">
+                <span class="name">韩灵汐</span>
+                <span class="pf">4.8</span>
+                <span class="sc">擅长。。。。</span>
+            </div>
+        </li>
+        <li class="pull-left">
+            <button onclick=""><img src="img/home_sbdjyfy.png" height="42" width="42"/></button>
+        </li>
+    </ul>
+
+
+</div>
+<div class="center-hr"><a href="#" >点击查看更多<img src="img/JIANTOU.jpg" height="9" width="27"/></a></div>
+
+<div class="press">
+    <div class="press-left">
+
+        <span class="title"> <img src="img/fl.png" height="39" width="17"/>最新律师解答</span>
+        <ul class="press-u">
+            <li class="press-i">
+                <span class="press-time" >1小时前</span>
+                <img src="img/qiu.jpg" height="50" width="52"/>
+                <div class="press-nr">
+                <div  class=" press-fh">北京天地律师事务所崔斌律师回复：在故意犯罪的会判刑</div>
+                <div  class="press-con" >你好,请问第一次头电动车会被判多久</div>
+                </div>
+            </li>
+            <li class="press-i">
+                <span class="press-time" >1小时前</span>
+                <img src="img/qiu.jpg" height="50" width="52"/>
+                <div class="press-nr">
+                    <div  class=" press-fh">北京天地律师事务所崔斌律师回复：在故意犯罪的会判刑</div>
+                    <div  class="press-con" >你好,请问第一次头电动车会被判多久</div>
+                </div>
+            </li>
+            <li class="press-i">
+                <span class="press-time" >1小时前</span>
+                <img src="img/qiu.jpg" height="50" width="52"/>
+                <div class="press-nr">
+                    <div  class=" press-fh">北京天地律师事务所崔斌律师回复：在故意犯罪的会判刑</div>
+                    <div  class="press-con" >你好,请问第一次头电动车会被判多久</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="press-right">
+        <div class="title"> <img src="img/fl.png" height="39" width="17"/>其他网友正在问</div>
+        <ul class="press-right-u">
+            <li class="press-right-i">
+                <img class="press-right-ig" src="img/ls.png" height="10" width="10"/>
+                <div class="press-right-title"><span class="press-right-sj">【治安事件】</span>第一偷电动车,判多久？<span class="press-right-time">12分钟前</span></div>
+                <div class="fengexian">-------------------------------------------------------------------------------</div>
+            </li>
+            <li class="press-right-i">
+                <img class="press-right-ig" src="img/ls.png" height="10" width="10"/>
+                <div class="press-right-title"><span class="press-right-sj">【治安事件】</span>第一偷电动车,判多久？<span class="press-right-time">12分钟前</span></div>
+                <div class="fengexian">-------------------------------------------------------------------------------</div>
+            </li>
+            <li class="press-right-i">
+                <img class="press-right-ig" src="img/ls.png" height="10" width="10"/>
+                <div class="press-right-title"><span class="press-right-sj">【治安事件】</span>第一偷电动车,判多久？<span class="press-right-time">12分钟前</span></div>
+                <div class="fengexian">-------------------------------------------------------------------------------</div>
+            </li>
+            <li class="press-right-i">
+                <img class="press-right-ig" src="img/ls.png" height="10" width="10"/>
+                <div class="press-right-title"><span class="press-right-sj">【治安事件】</span>第一偷电动车,判多久？<span class="press-right-time">12分钟前</span></div>
+                <div class="fengexian">-------------------------------------------------------------------------------</div>
+            </li>
+            <li class="press-right-i">
+                <img class="press-right-ig" src="img/ls.png" height="10" width="10"/>
+                <div class="press-right-title"><span class="press-right-sj">【治安事件】</span>第一偷电动车,判多久？<span class="press-right-time">12分钟前</span></div>
+                <div class="fengexian">-------------------------------------------------------------------------------</div>
+            </li>
+            </ul>
+    </div>
+    <span class="press-right-qa"><textarea  style="cursor: text"  class="press-right-inp-qa" placeholder="请输入时间地点,经过以及您的诉求,填写越详细,律师回复越精准..."></textarea>
+        <button class="press-right-inp-btn" onclick="alert('已发送')"><img src="img/rt-btn.jpg" height="30" width="120"/></button></span>
+</div>
+<div class="zixun">
+    <img src="img/zx.jpg" height="340" width="1200"/>
+    <button class="zixun-click" onclick="alert('1')"><img src="img/zx1.jpg" height="107" width="314"/></button>
+</div>
+<div class="download">
+    <div class="download-left">
+        <span class="download-left-title"><img src="img/fl.png" height="39" width="17"/>文件合同下载</span>
+        <div class="download-left-conent"><img src="img/xxx.jpg" height="360" width="650"/></div>
+    </div>
+    <div class="download-right">
+        <span class="download-right-title">热门文书</span>
+        <a class="aa" class="download-right-gdwx"  href="#">更多文书</a>
+        <div class="xian"></div>
+        <ul class="download-right-u" >
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+            <li class="download-right-i"><a href="#"> 1.房屋租赁合同</a></li>
+        </ul>
+    </div>
+</div>
+<div class="fl">
+    <span class="fl-title">法律知识</span>
+    <div class="xiansoild"></div>
+    <ul class="fl-u">
+        <li class="fl-i">
+            <div class="fl-i-tile">【法律小讲堂】</div>
+            <div class="fl-i-tname">为保禾苗生长,男子砍掉香樟树获刑好多</div>
+            <div class="fl-i-content">唐朝张怀作有《文字论》“论曰：文字者，总而为言。若分而为义，则文者祖父，字者子孙。察其物形，得其文理，故谓之曰文；母子相生，孽乳寝多，因名之为字。题於竹帛，则目之曰书。字之与书理亦归一因文也者，其道焕焉。日月星辰，天之文也；五岳四渎，地之文也；城阙翰仪，人之文也。文为用，相须而成唐朝张怀作有《文字论》“论曰：文字者，总而为言。若分而为义，则文者祖父，字者子孙。察其物形，得其文理，故谓之曰文；母子相生，孽乳寝多，因名之为字。题於竹帛，则目之曰书。字之与书理亦归一因文也者，其道焕焉。日月星辰，天之文也；五岳四渎，地之文也；城阙翰仪，人之文也。文为用，相须而成</div>
+            <button  class="fl-btn" onclick="alert('待续')"><img src="img/gdjcnr.png" height="40" width="330"/></button>
+        </li>
+        <li class="fl-i">
+            <div class="fl-i-tile">【法律小讲堂】</div>
+            <div class="fl-i-tname">为保禾苗生长,男子砍掉香樟树获刑好多</div>
+             <div class="fl-i-content">唐朝张怀作有《文字论》“论曰：文字者，总而为言。若分而为义，则文者祖父，字者子孙。察其物形，得其文理，故谓之曰文；母子相生，孽乳寝多，因名之为字。题於竹帛，则目之曰书。字之与书理亦归一因文也者，其道焕焉。日月星辰，天之文也；五岳四渎，地之文也；城阙翰仪，人之文也。文为用，相须而成唐朝张怀作有《文字论》“论曰：文字者，总而为言。若分而为义，则文者祖父，字者子孙。察其物形，得其文理，故谓之曰文；母子相生，孽乳寝多，因名之为字。题於竹帛，则目之曰书。字之与书理亦归一因文也者，其道焕焉。日月星辰，天之文也；五岳四渎，地之文也；城阙翰仪，人之文也。文为用，相须而成</div>
+             <button   class="fl-btn" onclick=""><img src="img/gdjcnr.png" height="40" width="330"/></button>
+        </li>
+        <li class="fl-i">
+            <div class="fl-i-tile">【法律小讲堂】</div>
+            <div class="fl-i-tname">为保禾苗生长,男子砍掉香樟树获刑好多</div>
+             <div class="fl-i-content">唐朝张怀作有《文字论》“论曰：文字者，总而为言。若分而为义，则文者祖父，字者子孙。察其物形，得其文理，故谓之曰文；母子相生，孽乳寝多，因名之为字。题於竹帛，则目之曰书。字之与书理亦归一因文也者，其道焕焉。日月星辰，天之文也；五岳四渎，地之文也；城阙翰仪，人之文也。文为用，相须而成唐朝张怀作有《文字论》“论曰：文字者，总而为言。若分而为义，则文者祖父，字者子孙。察其物形，得其文理，故谓之曰文；母子相生，孽乳寝多，因名之为字。题於竹帛，则目之曰书。字之与书理亦归一因文也者，其道焕焉。日月星辰，天之文也；五岳四渎，地之文也；城阙翰仪，人之文也。文为用，相须而成</div>
+             <button  class="fl-btn" onclick=""><img src="img/gdjcnr.png" height="40" width="330"/></button>
+        </li>
+    </ul>
+
+</div>
+<div class="f2">
+    <span class="f2-title">劳动仲裁</span>
+    <div class="f2-left-ig">
+        <img src="img/xxx.jpg" height="320" width="450"/>
+    </div>
+    <div class="f2-center-content">
+        <p> 茂瓦庙，又名万象大萨瓦林。它是红原最著名的藏传佛教寺院，也是四川西北部最大的宁马寺。寺庙位于阿坝藏族羌族自治州红原县和若尔盖路之间的阿穆柯河镇后面，距红原县城27公里。在麦瓦庙中矗立着一座和平塔。它是世界上最高的菩提树塔。</p>
+        <p> 当黎明的第一缕光线穿过群山时，和平宝塔里的佛陀和宝塔里的日月都在天空中反射。看着127米高的和平塔，我觉得人类是渺小的，但内心强大。</p>
+        <p>  迷人的自然风光,美丽的天池的风景,石塘林惊人,高耸的华丽的玫瑰峰、独特的风景好,沟,神泉的水温泉群深刻而独特的自然景观和文化历史和纯厚的仆人真实伦理风情,休闲,度假,旅游,疗养圣地。</p>
+    </div>
+    <div class="f2-btn-xqbz">
+        <button onclick="show();"><img src="img/xqz.jpg" height="30" width="121"/></button>
+    </div>
+    <div class="f2-xian"></div>
+    <div class="f2-kepu">
+        <span class="f2-kepu-title">相关科普</span>
+        <div class="f2-kepu-xian"></div>
+        <div class="f2-content">
+            <ul class="f2-content-u">
+                <li class="f2-content-i">
+                    <span class="f2-content-i-ig"><img src="img/ls.png" height="10" width="10"/></span>
+                    <span class="f2-content-i-con">仲裁案件受理范围及条件</span>
+                <li>
+                <li class="f2-content-i">
+                 <span class="f2-content-i-ig"><img src="img/hs.png" height="10" width="10"/></span>
+                    <span class="f2-content-i-con">仲裁顺序流程</span>
+                <li>
+                <li class="f2-content-i">
+                 <span class="f2-content-i-ig"><img src="img/hs.png" height="10" width="10"/></span>
+                    <span class="f2-content-i-con">仲裁顺序流程</span>
+                <li>
+                <li class="f2-content-i">
+                 <span class="f2-content-i-ig"><img src="img/hs.png" height="10" width="10"/></span>
+                    <span class="f2-content-i-con">仲裁顺序流程</span>
+                <li><li class="f2-content-i">
+                 <span class="f2-content-i-ig"><img src="img/hs.png" height="10" width="10"/></span>
+                    <span class="f2-content-i-con">仲裁顺序流程</span>
+                <li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="frm" style="display: none">
+    <img src="img/tc.png" height="626" width="500"/>
+    <span class="frm-title">寻求帮助</span>
+    <span class="frm-zhuyi">*请认真填写,以便我给您最专业的答案</span>
+    <div class="frm-xian"></div>
+    <div class="frm-from">
+        <ul class="frm-from-u">
+            <li class="frm-from-i">
+                <div class="frm-from-radio-name">申请类别
+                    <span class="frm-from-radio-inp">
+                        <input name="1"  id ="gern" class="" type="radio" /><label for="gern">个人</label>
+                        <input name="1"  id="jiti" class="" type="radio"/><label for="jiti">集体</label>
+                         <input name="1"  id="yrdw" class="" type="radio"/><label for="yrdw">用人单位</label>
+               </span>
+                </div>
+
+                <div class="frm-from-xian"></div>
+            </li>
+            <li class="frm-from-i">
+                <div class="frm-from-radio-name">姓名
+                    <span class="frm-from-radio-text">
+                        <input name="1" class="frm-from-radio-text-t" type="text" placeholder="未填写"/>
+                    </span>
+                </div>
+                <div class="frm-from-xian"></div>
+            </li>
+            <li class="frm-from-i">
+                <div class="frm-from-radio-name">联系电话
+                    <span class="frm-from-radio-text">
+                        <input name="1" class="frm-from-radio-text-t" type="text" placeholder="未填写"/>
+                </span>
+                </div>
+                <div class="frm-from-xian"></div>
+            </li>
+            <li class="frm-from-i">
+                <div class="frm-from-radio-name">劳动合同履行地
+                    <span class="frm-from-select">
+                      <select class="frm-from-select-dd">
+                      <option value ="volvo">北京</option>
+                      <option value ="saab">上海</option>
+                       <option value="opel">石家庄</option>
+                       <option value="audi">山东</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="frm-from-xian"></div>
+            </li>
+            <li class="frm-from-i">
+                <div class="frm-from-radio-name">用人单位所在地
+                    <span class="frm-from-select">
+                         <select class="frm-from-select-dd">
+                      <option value ="volvo">北京</option>
+                      <option value ="saab">上海</option>
+                       <option value="opel">石家庄</option>
+                       <option value="audi">山东</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="frm-from-xian"></div>
+            </li>
+            <li class="frm-from-i">
+                <div class="frm-from-radio-name">是否属于劳动派遣
+                     <span class="frm-from-radio-inp">
+                      <input name="2"  id ="y" class="" type="radio" /><label for="y">是</label>
+                        <input name="2"  id ="f" class="" type="radio" /><label for="f">否</label>
+                     </span>
+                </div>
+                <div class="frm-from-xian"></div>
+            </li>
+            <li class="frm-from-i">
+                <div class="frm-from-radio-name">是否有劳动合同
+                    <span class="frm-from-radio-inp">
+                    <input name="3"  id ="yy" class="" type="radio" /><label for="yy">是</label>
+                        <input name="3"  id ="ff" class="" type="radio" /><label for="ff">否</label>
+                         </span>
+                </div>
+                <div class="frm-from-xian"></div>
+            </li>
+            <li class="frm-from-i">
+                <div class="frm-from-radio-name">纠纷发生时间
+                    <span class="frm-from-i-time"><input class="inputtime" type="text" id="dt" placeholder=""><div id="dd"></div><img src="img/rl.jpg" id="rl" height="18" width="19"/></span>
+                </div>
+                <div class="frm-from-xian"></div>
+            </li>
+            <li class="frm-from-i">
+                <span class="frm-from-radio-name">问题阐述：</span>
+                <textarea  class="frm-text" style="cursor: text"></textarea>
+                <button class="from-btn1" onclick="TJ()"><img src="img/tjwt.png" height="26" width="90"/></button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="db">
+    <img src="img/db.jpg" height="381" width="1920"/>
+    <div class="db-tlt">
+        <a href="#">首页</a>
+        <a href="#">律师在线</a>
+        <a href="#">咨询问答</a>
+        <a href="#">法律知识</a>
+    </div>
+    <div class="db-tlt-t">
+        <a href="#">法律文书</a>
+        <a href="#">关于我们</a>
+    </div>
+    <div class="db-erweima"><img src="img/erweima.jpg" height="114" width="118"/></div>
+    <div class="db-phone">联系电话：1325989656</div>
+    <div class="db-qq">客服QQ：58526565</div>
+    <div class="db-dz">公司地址: 北京市昌平回龙观<p>东大街广场</p></div>
+</div>
+<script>
+    $(function(){
+        $('#carousel1').carousel({
+            el : {
+                imgsContainer	: '.carousel', // 图片容器
+                prevBtn 		: '.carousel-prev', // 上翻按钮
+                nextBtn 		: '.carousel-next', // 下翻按钮
+                indexContainer	: '.carousel-index', // 下标容器
+            },conf : {
+                auto			: true, //是否自动播放 true/false 默认:true
+                needIndexNum	: false, //是否需要下标数字 true/false 默认:true
+                animateTiming	: 1000, //动画时长(毫秒) 默认:1000
+                autoTiming		: 2000, //自动播放间隔时间(毫秒) 默认:3000
+                direction 		: 'right', //自动播放方向 left/right 默认:right
+            }
+        });
+        $("#carousel3").find('.carousel-prev,.carousel-next,.carousel-index').hide();
+        $("#carousel3").hover(function(){
+            $(this).find(".carousel-prev,.carousel-next,.carousel-index").stop().fadeIn(300);
+        },function(){
+            $(this).find(".carousel-prev,.carousel-next,.carousel-index").stop().fadeOut(300);
+        });
+
+    });
+   function show() {
+       $(".frm").css("display","block")
+   }
+function TJ() {
+    alert('提交成功')
+    $(".frm").css("display","none")
+}
+
+
+    $('#ca').calendar({
+        width: 320,
+        height: 320,
+        data: [
+            {
+                date: '2015/12/24',
+                value: 'Christmas Eve'
+            },
+            {
+                date: '2015/12/25',
+                value: 'Merry Christmas'
+            },
+            {
+                date: '2016/01/01',
+                value: 'Happy New Year'
+            }
+        ],
+        onSelected: function (view, date, data) {
+            console.log('view:' + view)
+            alert('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+
+    $('#dd').calendar({
+        trigger: '#dt',
+        zIndex: 999,
+        format: 'yyyy-mm-dd',
+        onSelected: function (view, date, data) {
+            console.log('event: onSelected')
+        },
+        onClose: function (view, date, data) {
+            console.log('event: onClose')
+            console.log('view:' + view)
+            console.log('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+</script>
 </body>
 </html>
